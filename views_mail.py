@@ -10,14 +10,13 @@ def mail(request):
         friend_name = request.POST.get('friend_name')
         user_email = request.POST.get('user_email')
         friend_email = request.POST.get('friend_email')
-        score = str(request.POST.get('score'))
 
-        if user_email and friend_email and user_name and friend_name and score:
+        if user_email and friend_email and user_name and friend_name:
 
-            subject = join('Ranking The Stars Game uitnodiging van ' + user_name)
-            first_link = '<a href="http://zapplive.ncrv.nl/rankingthestars">Ranking the Stars Game</a>'
-            second_link = '<a href="http://zapplive.ncrv.nl">Z@PPLive</a>'
-            message = join('Ik heb de ' + first_link + ' ontdekt en mijn score was ' + score + '. Game jij ook mee en help je punten te scoren voor de gezamenlijke ' + second_link + ' pot?')
+            subject = join('Mail van ' + user_name)
+            first_link = '' #html link
+            second_link = '' #html link
+            message = join('') #message with links
             htmlmessage = message
             html = '<html><body>' + htmlmessage + '</body></html>'
             mail = EmailMultiAlternatives(subject, message, user_email, [friend_email])
