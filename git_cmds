@@ -1,7 +1,0 @@
-git init
-touch README
-git add README
-git commit -m 'hello world'
-git remote add origin git@github.com:0xPr0xy/python.git
-git push -u origin master
-
