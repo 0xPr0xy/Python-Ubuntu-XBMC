@@ -7,6 +7,8 @@ if len(sys.argv) <= 1:
   sys.exit(1)
 
 _login_success = False
+
+#python u1file.py login
 def login():
   from gobject import MainLoop
   from dbus.mainloop.glib import DBusGMainLoop
@@ -34,6 +36,7 @@ def login():
 if sys.argv[1] == "login":
   login()
 
+#python u1file.py logout
 def logout():
   from gobject import MainLoop
   from dbus.mainloop.glib import DBusGMainLoop
@@ -52,7 +55,7 @@ def logout():
 
 if sys.argv[1] == "logout":
   logout()
-
+#python u1file.py create-volume testing
 def create_volume(path):
   import ubuntuone.couch.auth as auth
   import urllib
@@ -63,6 +66,7 @@ if sys.argv[1] == "create-volume":
   login()
   create_volume(sys.argv[2])
 
+#python u1file.py put u1file.py testing/u1file.py
 def put(local, remote):
   import json
   import ubuntuone.couch.auth as auth
@@ -94,6 +98,7 @@ if sys.argv[1] == "put":
   login()
   put(sys.argv[2], sys.argv[3])
 
+#python u1file.py get testing/u1file.py /tmp/u1file.py
 def get(remote, local):
   import json
   import ubuntuone.couch.auth as auth
@@ -115,6 +120,7 @@ if sys.argv[1] == "get":
   login()
   get(sys.argv[2], sys.argv[3])
 
+#python u1file.py list testing
 def get_children(path):
   import json
   import ubuntuone.couch.auth as auth
@@ -138,6 +144,7 @@ if sys.argv[1] == "list":
   login()
   get_children(sys.argv[2])
 
+#python u1file.py query testing/u1file.py
 def query(path):
   import json
   import ubuntuone.couch.auth as auth
@@ -156,6 +163,7 @@ if sys.argv[1] == "query":
   login()
   query(sys.argv[2])
 
+#python u1file.py delete testing/u1file.py
 def delete(path):
   import ubuntuone.couch.auth as auth
   import urllib
