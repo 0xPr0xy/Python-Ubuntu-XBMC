@@ -1,0 +1,10 @@
+Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=135
+Name: simple-player1
+Maintainer: UNKNOWN <UNKNOWN>
+Source: UNKNOWN
+
+Files: *
+Copyright: (C)
+Copyright: (C) 2011 Rick Spencer <rick.spencer@canonical.com>
+Copyright: (C) YYYY <Your Name> <Your E-mail>
+License: UNKNOWN
