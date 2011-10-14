@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: kaa-metadata
+Version: 0.7.7
+Summary: Module for retrieving information about media files
+Home-page: http://freevo.sourceforge.net/kaa
+Author: Thomas Schueppel, Dirk Meyer, Jason Tackaberry
+Author-email: freevo-devel@lists.sourceforge.net
+License: GPL
+Description: Module for retrieving information about media files
+Platform: UNKNOWN
