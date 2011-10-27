@@ -1,8 +1,0 @@
-<glade-catalog name="simple_player1_window" domain="glade-3" 
-               depends="gtk+" version="1.0">
-  <glade-widget-classes>
-    <glade-widget-class title="Simple Player1 Window" name="SimplePlayer1Window" 
-                        generic-name="SimplePlayer1Window" parent="GtkWindow"
-                        icon-name="widget-gtk-window"/>
-  </glade-widget-classes>
-</glade-catalog>
