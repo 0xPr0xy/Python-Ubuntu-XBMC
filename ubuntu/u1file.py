@@ -102,7 +102,7 @@ if sys.argv[1] == "put":
 def get(remote, local):
   import json
   import ubuntuone.couch.auth as auth
-  import urllib
+  import curllib
 
   # Request metadata
   base = "https://one.ubuntu.com/api/file_storage/v1/~/"
